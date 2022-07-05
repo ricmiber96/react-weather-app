@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useEffect, useState } from 'react'
 import CardToday from '../components/CardToday'
 import Footer from '../components/Footer'
 import InputLocation from '../components/InputLocation'
@@ -22,6 +22,10 @@ export default function WeatherApp () {
   const handleCity = (e) => {
     cityInput = e.target.value
   }
+
+  useEffect(() => {
+    document.title = 'My Page Title'
+  }, [])
 
   const getContent = () => {
     if (error) return <h2 className='text-white'>Error when fetching: {error}</h2>

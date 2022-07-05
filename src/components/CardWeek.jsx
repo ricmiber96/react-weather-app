@@ -1,7 +1,7 @@
 import { React } from 'react'
 
 export default function CardWeek ({ day, date, tempMax, tempMin, icon }) {
-  const iconUrl = `../../icons/${icon}.svg`
+  const iconUrl = `./icons/${icon}.svg`
   return (
     <div className='flex flex-col  items-center justify-center align-center rounded-lg text-white bg-card-color p-8 m-2'>
       <div className='flex flex-row'>

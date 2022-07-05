@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react'
 import { GoLocation } from 'react-icons/go'
 
 export default function CardToday ({ city, weather, icon }) {
-  const iconUrl = `../../icons/${icon}.svg`
+  const iconUrl = `./icons/${icon}.svg`
   const [time, setTime] = useState(new Date().toLocaleTimeString())
   const [date, setDate] = useState(new Date().toLocaleDateString())
 
